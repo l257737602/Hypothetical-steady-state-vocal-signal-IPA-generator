@@ -1013,22 +1013,22 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
                 {
                     break;
                 }
-                if(ui->bikd->isChecked())//如果鼻腔打开,那么添加鼻化符号
-                    {
-                        this->p_resultToOutput->append("̃");
-                    }
-                if(ui->yriyvs->isChecked())//如果圆唇程度为"中",那么添加一个"更圆唇"符号
-                    {
-                        this->p_resultToOutput->append("̹");
-                    }
-                if(ui->igybjp->isChecked()==0)//如果不成音节,那么添加一个不成音节符号
-                    {
-                        this->p_resultToOutput->append("̯");
-                    }
-                if(ui->uliisi->isChecked())//如果有咝音,那么添加齿化符号
-                    {
-                        this->p_resultToOutput->append("̪");
-                    }
+            }
+            if(ui->bikd->isChecked())//如果鼻腔打开,那么添加鼻化符号
+            {
+                this->p_resultToOutput->append("̃");
+            }
+            if(ui->yriyvs->isChecked())//如果圆唇程度为"中",那么添加一个"更圆唇"符号
+            {
+                this->p_resultToOutput->append("̹");
+            }
+            if(ui->igybjp->isChecked()==0)//如果不成音节,那么添加一个不成音节符号
+            {
+                this->p_resultToOutput->append("̯");
+            }
+            if(ui->uliisi->isChecked())//如果有咝音,那么添加齿化符号
+            {
+                this->p_resultToOutput->append("̪");
             }
         }
         //最后,无论是近音还是元音,添加协同调音标记
