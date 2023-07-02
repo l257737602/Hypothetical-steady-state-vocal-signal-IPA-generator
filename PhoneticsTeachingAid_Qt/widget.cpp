@@ -1,3 +1,5 @@
+//注:该文档中所有的"协同"字样都是笔误,应为"次要",该文档中所有的"协"字样都是笔误,应为"次"
+
 #include "widget.h"
 #include "qbuttongroup.h"
 #include "ui_widget.h"
@@ -700,14 +702,14 @@ void jbAppend
      bool igybjp//成音节
     )
 {
-    if(p_targetToAppend->isEmpty()==0)//如果前面已经有符号,那么添加连音符
-    {
-        p_targetToAppend->append("͡");
-    }
     switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)
     {
         case JBNUMBER://如果该部位的近音按钮按下
         {
+            if(p_targetToAppend->isEmpty()==0)//如果前面已经有符号,那么添加连音符
+            {
+                p_targetToAppend->append("͡");
+            }
             if(igybjp)//如果成音节,那么添加该部位的成音节近音符号
             {
                 p_targetToAppend->append(igybjpjbSymbol);
@@ -720,6 +722,10 @@ void jbAppend
         }
         case BMJBNUMBER://如果该部位的边近音按钮按下
         {
+            if(p_targetToAppend->isEmpty()==0)//如果前面已经有符号,那么添加连音符
+            {
+                p_targetToAppend->append("͡");
+            }
             p_targetToAppend->append(bmjbSymbol);//添加该部位的边近音符号
             if(igybjp)//如果成音节,那么添加一个成音节符号
             {
@@ -1018,6 +1024,10 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
             {
                 this->p_resultToOutput->append("̃");
             }
+            if(ui->ugddjk->isChecked())//如果声带不振动,那么添加清化符号
+            {
+                this->p_resultToOutput->append("̊");
+            }
             if(ui->yriyvs->isChecked())//如果圆唇程度为"中",那么添加一个"更圆唇"符号
             {
                 this->p_resultToOutput->append("̹");
@@ -1029,6 +1039,14 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
             if(ui->uliisi->isChecked())//如果有咝音,那么添加齿化符号
             {
                 this->p_resultToOutput->append("̪");
+            }
+            if(ui->ugmfhu->isChecked())//如果声门呼气,那么添加呼气符号
+            {
+                this->p_resultToOutput->append("↑");
+            }
+            else if(ui->ugmfhu->isChecked())//如果声门吸气,那么添加吸气符号
+            {
+                this->p_resultToOutput->append("↓");
             }
         }
         //最后,无论是近音还是元音,添加协同调音标记
@@ -1107,6 +1125,15 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
         {
             p_resultToOutput->append("↓");
         }
+    }
+    //如果是呼气状态,而用以表示呼气状态的字符过少或过多,则调整数量,使向上箭头只有一个,并转移到最后
+    else if(this->ugmf->checkedId()==UGMFHUNUMBER)
+    {
+        if(p_resultToOutput->contains("↑"))
+            {
+                p_resultToOutput->replace("↑","");
+                p_resultToOutput->append("↑");
+            }
     }
     ui->resultDisplayer->setText("\n");
     ui->resultDisplayer->append(*p_resultToOutput);

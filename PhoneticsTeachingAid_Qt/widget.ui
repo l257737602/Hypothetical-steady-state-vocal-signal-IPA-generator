@@ -68,14 +68,14 @@
     <item row="6" column="0">
      <widget class="QRadioButton" name="rreebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
      <widget class="QRadioButton" name="rreexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -146,14 +146,14 @@
     <item row="6" column="0">
      <widget class="QRadioButton" name="eeyhbmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
      <widget class="QRadioButton" name="eeyhxpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -224,14 +224,14 @@
     <item row="6" column="0">
      <widget class="QRadioButton" name="ykeebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
     <item row="7" column="0">
      <widget class="QRadioButton" name="ykeexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -554,14 +554,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="7" column="0">
      <widget class="QRadioButton" name="xnuebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
     <item row="8" column="0">
      <widget class="QRadioButton" name="xnuexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -773,7 +773,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="5" column="0">
      <widget class="QRadioButton" name="uliyxpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -832,7 +832,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="9" column="3">
      <widget class="QRadioButton" name="ybeebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -923,7 +923,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="9" column="6">
      <widget class="QRadioButton" name="jruebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -937,14 +937,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="10" column="1">
      <widget class="QRadioButton" name="iiuexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
     <item row="9" column="0">
      <widget class="QRadioButton" name="iyuebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -972,7 +972,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="9" column="2">
      <widget class="QRadioButton" name="iiybbmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -1129,14 +1129,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="10" column="5">
      <widget class="QRadioButton" name="ybhzxpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
     <item row="10" column="3">
      <widget class="QRadioButton" name="ybeexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -1150,14 +1150,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="10" column="0">
      <widget class="QRadioButton" name="iyuexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
     <item row="10" column="2">
      <widget class="QRadioButton" name="iiybxpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -1185,7 +1185,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="10" column="6">
      <widget class="QRadioButton" name="jruexpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -1199,7 +1199,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="9" column="1">
      <widget class="QRadioButton" name="iiuebmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -1241,7 +1241,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="9" column="5">
      <widget class="QRadioButton" name="ybhzbmxp">
       <property name="text">
-       <string>边协</string>
+       <string>边次</string>
       </property>
      </widget>
     </item>
@@ -1261,7 +1261,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="3" column="4" rowspan="4">
      <widget class="QRadioButton" name="xxfuxpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
@@ -1274,7 +1274,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -1322,7 +1322,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <item row="5" column="0">
      <widget class="QRadioButton" name="iyiixpts">
       <property name="text">
-       <string>协同</string>
+       <string>次要</string>
       </property>
      </widget>
     </item>
