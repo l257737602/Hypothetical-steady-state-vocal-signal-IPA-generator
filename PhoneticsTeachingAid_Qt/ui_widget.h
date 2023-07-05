@@ -101,25 +101,34 @@ public:
     QRadioButton *xnueihts;
     QWidget *layoutWidget2;
     QGridLayout *gridLayout_2;
-    QRadioButton *cidiyh;
+    QRadioButton *bjgcyh;
+    QRadioButton *bjgchz;
+    QRadioButton *cigcyh;
+    QRadioButton *diqm;
+    QRadioButton *uegfjb;
     QRadioButton *bjdiyh;
-    QRadioButton *vsyh;
+    QRadioButton *uegfbmxp;
+    QLabel *label_21;
+    QRadioButton *bjdiqm;
     QRadioButton *diyh;
-    QLabel *label_14;
-    QRadioButton *cigchz;
+    QRadioButton *uegfca;
+    QRadioButton *uegfxpts;
     QRadioButton *bjdihz;
     QRadioButton *cidiqm;
-    QRadioButton *dihz;
-    QRadioButton *vshz;
     QRadioButton *cigcqm;
     QRadioButton *bjgcqm;
-    QRadioButton *bjgcyh;
-    QRadioButton *diqm;
-    QRadioButton *vsqm;
-    QRadioButton *bjgchz;
-    QRadioButton *bjdiqm;
+    QRadioButton *dihz;
+    QLabel *label_14;
+    QRadioButton *cigchz;
+    QRadioButton *uegfbmca;
+    QRadioButton *uegfbmjb;
+    QRadioButton *uegfse;
+    QRadioButton *vsyh;
+    QRadioButton *vshz;
     QRadioButton *cidihz;
-    QRadioButton *cigcyh;
+    QRadioButton *vsqm;
+    QRadioButton *cidiyh;
+    QRadioButton *uegfuj;
     QWidget *layoutWidget3;
     QGridLayout *gridLayout_3;
     QLabel *label_13;
@@ -210,7 +219,7 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(1229, 611);
+        Widget->resize(1471, 611);
         layoutWidget = new QWidget(Widget);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(640, 30, 51, 233));
@@ -369,7 +378,7 @@ public:
 
         layoutWidget_6 = new QWidget(Widget);
         layoutWidget_6->setObjectName("layoutWidget_6");
-        layoutWidget_6->setGeometry(QRect(966, 80, 39, 125));
+        layoutWidget_6->setGeometry(QRect(1210, 80, 39, 125));
         gridLayout_9 = new QGridLayout(layoutWidget_6);
         gridLayout_9->setObjectName("gridLayout_9");
         gridLayout_9->setContentsMargins(0, 0, 0, 0);
@@ -401,7 +410,7 @@ public:
 
         layoutWidget_7 = new QWidget(Widget);
         layoutWidget_7->setObjectName("layoutWidget_7");
-        layoutWidget_7->setGeometry(QRect(1020, 100, 39, 71));
+        layoutWidget_7->setGeometry(QRect(1264, 100, 39, 71));
         gridLayout_10 = new QGridLayout(layoutWidget_7);
         gridLayout_10->setObjectName("gridLayout_10");
         gridLayout_10->setContentsMargins(0, 0, 0, 0);
@@ -423,7 +432,7 @@ public:
 
         layoutWidget_8 = new QWidget(Widget);
         layoutWidget_8->setObjectName("layoutWidget_8");
-        layoutWidget_8->setGeometry(QRect(1070, 100, 51, 71));
+        layoutWidget_8->setGeometry(QRect(1314, 100, 51, 71));
         gridLayout_11 = new QGridLayout(layoutWidget_8);
         gridLayout_11->setObjectName("gridLayout_11");
         gridLayout_11->setContentsMargins(0, 0, 0, 0);
@@ -445,7 +454,7 @@ public:
 
         layoutWidget_9 = new QWidget(Widget);
         layoutWidget_9->setObjectName("layoutWidget_9");
-        layoutWidget_9->setGeometry(QRect(1130, 80, 39, 125));
+        layoutWidget_9->setGeometry(QRect(1374, 80, 39, 125));
         gridLayout_12 = new QGridLayout(layoutWidget_9);
         gridLayout_12->setObjectName("gridLayout_12");
         gridLayout_12->setContentsMargins(0, 0, 0, 0);
@@ -477,7 +486,7 @@ public:
 
         layoutWidget_10 = new QWidget(Widget);
         layoutWidget_10->setObjectName("layoutWidget_10");
-        layoutWidget_10->setGeometry(QRect(1180, 90, 39, 98));
+        layoutWidget_10->setGeometry(QRect(1424, 90, 39, 98));
         gridLayout_13 = new QGridLayout(layoutWidget_10);
         gridLayout_13->setObjectName("gridLayout_13");
         gridLayout_13->setContentsMargins(0, 0, 0, 0);
@@ -504,7 +513,7 @@ public:
 
         resultDisplayer = new QTextEdit(Widget);
         resultDisplayer->setObjectName("resultDisplayer");
-        resultDisplayer->setGeometry(QRect(9, 302, 1211, 301));
+        resultDisplayer->setGeometry(QRect(9, 302, 1451, 301));
         QFont font;
         font.setFamilies({QString::fromUtf8("Unifont Upper")});
         font.setPointSize(48);
@@ -570,40 +579,69 @@ public:
 
         layoutWidget2 = new QWidget(Widget);
         layoutWidget2->setObjectName("layoutWidget2");
-        layoutWidget2->setGeometry(QRect(760, 60, 197, 179));
+        layoutWidget2->setGeometry(QRect(760, 60, 441, 185));
         gridLayout_2 = new QGridLayout(layoutWidget2);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        cidiyh = new QRadioButton(layoutWidget2);
-        cidiyh->setObjectName("cidiyh");
+        bjgcyh = new QRadioButton(layoutWidget2);
+        bjgcyh->setObjectName("bjgcyh");
 
-        gridLayout_2->addWidget(cidiyh, 5, 1, 1, 1);
+        gridLayout_2->addWidget(bjgcyh, 2, 1, 1, 1);
+
+        bjgchz = new QRadioButton(layoutWidget2);
+        bjgchz->setObjectName("bjgchz");
+
+        gridLayout_2->addWidget(bjgchz, 2, 2, 1, 1);
+
+        cigcyh = new QRadioButton(layoutWidget2);
+        cigcyh->setObjectName("cigcyh");
+
+        gridLayout_2->addWidget(cigcyh, 1, 1, 1, 1);
+
+        diqm = new QRadioButton(layoutWidget2);
+        diqm->setObjectName("diqm");
+
+        gridLayout_2->addWidget(diqm, 6, 0, 1, 1);
+
+        uegfjb = new QRadioButton(layoutWidget2);
+        uegfjb->setObjectName("uegfjb");
+
+        gridLayout_2->addWidget(uegfjb, 4, 4, 3, 1);
 
         bjdiyh = new QRadioButton(layoutWidget2);
         bjdiyh->setObjectName("bjdiyh");
 
         gridLayout_2->addWidget(bjdiyh, 4, 1, 1, 1);
 
-        vsyh = new QRadioButton(layoutWidget2);
-        vsyh->setObjectName("vsyh");
-        vsyh->setChecked(true);
+        uegfbmxp = new QRadioButton(layoutWidget2);
+        uegfbmxp->setObjectName("uegfbmxp");
 
-        gridLayout_2->addWidget(vsyh, 3, 1, 1, 1);
+        gridLayout_2->addWidget(uegfbmxp, 1, 3, 3, 1);
+
+        label_21 = new QLabel(layoutWidget2);
+        label_21->setObjectName("label_21");
+
+        gridLayout_2->addWidget(label_21, 0, 3, 1, 1);
+
+        bjdiqm = new QRadioButton(layoutWidget2);
+        bjdiqm->setObjectName("bjdiqm");
+
+        gridLayout_2->addWidget(bjdiqm, 4, 0, 1, 1);
 
         diyh = new QRadioButton(layoutWidget2);
         diyh->setObjectName("diyh");
 
         gridLayout_2->addWidget(diyh, 6, 1, 1, 1);
 
-        label_14 = new QLabel(layoutWidget2);
-        label_14->setObjectName("label_14");
+        uegfca = new QRadioButton(layoutWidget2);
+        uegfca->setObjectName("uegfca");
 
-        gridLayout_2->addWidget(label_14, 0, 0, 1, 3);
+        gridLayout_2->addWidget(uegfca, 4, 5, 3, 1);
 
-        cigchz = new QRadioButton(layoutWidget2);
-        cigchz->setObjectName("cigchz");
+        uegfxpts = new QRadioButton(layoutWidget2);
+        uegfxpts->setObjectName("uegfxpts");
 
-        gridLayout_2->addWidget(cigchz, 1, 2, 1, 1);
+        gridLayout_2->addWidget(uegfxpts, 4, 3, 3, 1);
 
         bjdihz = new QRadioButton(layoutWidget2);
         bjdihz->setObjectName("bjdihz");
@@ -615,16 +653,6 @@ public:
 
         gridLayout_2->addWidget(cidiqm, 5, 0, 1, 1);
 
-        dihz = new QRadioButton(layoutWidget2);
-        dihz->setObjectName("dihz");
-
-        gridLayout_2->addWidget(dihz, 6, 2, 1, 1);
-
-        vshz = new QRadioButton(layoutWidget2);
-        vshz->setObjectName("vshz");
-
-        gridLayout_2->addWidget(vshz, 3, 2, 1, 1);
-
         cigcqm = new QRadioButton(layoutWidget2);
         cigcqm->setObjectName("cigcqm");
 
@@ -635,40 +663,66 @@ public:
 
         gridLayout_2->addWidget(bjgcqm, 2, 0, 1, 1);
 
-        bjgcyh = new QRadioButton(layoutWidget2);
-        bjgcyh->setObjectName("bjgcyh");
+        dihz = new QRadioButton(layoutWidget2);
+        dihz->setObjectName("dihz");
 
-        gridLayout_2->addWidget(bjgcyh, 2, 1, 1, 1);
+        gridLayout_2->addWidget(dihz, 6, 2, 1, 1);
 
-        diqm = new QRadioButton(layoutWidget2);
-        diqm->setObjectName("diqm");
+        label_14 = new QLabel(layoutWidget2);
+        label_14->setObjectName("label_14");
 
-        gridLayout_2->addWidget(diqm, 6, 0, 1, 1);
+        gridLayout_2->addWidget(label_14, 0, 0, 1, 1);
 
-        vsqm = new QRadioButton(layoutWidget2);
-        vsqm->setObjectName("vsqm");
+        cigchz = new QRadioButton(layoutWidget2);
+        cigchz->setObjectName("cigchz");
 
-        gridLayout_2->addWidget(vsqm, 3, 0, 1, 1);
+        gridLayout_2->addWidget(cigchz, 1, 2, 1, 1);
 
-        bjgchz = new QRadioButton(layoutWidget2);
-        bjgchz->setObjectName("bjgchz");
+        uegfbmca = new QRadioButton(layoutWidget2);
+        uegfbmca->setObjectName("uegfbmca");
 
-        gridLayout_2->addWidget(bjgchz, 2, 2, 1, 1);
+        gridLayout_2->addWidget(uegfbmca, 1, 5, 3, 1);
 
-        bjdiqm = new QRadioButton(layoutWidget2);
-        bjdiqm->setObjectName("bjdiqm");
+        uegfbmjb = new QRadioButton(layoutWidget2);
+        uegfbmjb->setObjectName("uegfbmjb");
 
-        gridLayout_2->addWidget(bjdiqm, 4, 0, 1, 1);
+        gridLayout_2->addWidget(uegfbmjb, 1, 4, 3, 1);
+
+        uegfse = new QRadioButton(layoutWidget2);
+        uegfse->setObjectName("uegfse");
+
+        gridLayout_2->addWidget(uegfse, 1, 7, 6, 1);
+
+        vsyh = new QRadioButton(layoutWidget2);
+        vsyh->setObjectName("vsyh");
+        vsyh->setChecked(true);
+
+        gridLayout_2->addWidget(vsyh, 3, 1, 1, 1);
+
+        vshz = new QRadioButton(layoutWidget2);
+        vshz->setObjectName("vshz");
+
+        gridLayout_2->addWidget(vshz, 3, 2, 1, 1);
 
         cidihz = new QRadioButton(layoutWidget2);
         cidihz->setObjectName("cidihz");
 
         gridLayout_2->addWidget(cidihz, 5, 2, 1, 1);
 
-        cigcyh = new QRadioButton(layoutWidget2);
-        cigcyh->setObjectName("cigcyh");
+        vsqm = new QRadioButton(layoutWidget2);
+        vsqm->setObjectName("vsqm");
 
-        gridLayout_2->addWidget(cigcyh, 1, 1, 1, 1);
+        gridLayout_2->addWidget(vsqm, 3, 0, 1, 1);
+
+        cidiyh = new QRadioButton(layoutWidget2);
+        cidiyh->setObjectName("cidiyh");
+
+        gridLayout_2->addWidget(cidiyh, 5, 1, 1, 1);
+
+        uegfuj = new QRadioButton(layoutWidget2);
+        uegfuj->setObjectName("uegfuj");
+
+        gridLayout_2->addWidget(uegfuj, 1, 6, 6, 1);
 
         layoutWidget3 = new QWidget(Widget);
         layoutWidget3->setObjectName("layoutWidget3");
@@ -715,7 +769,7 @@ public:
 
         igybjp = new QCheckBox(Widget);
         igybjp->setObjectName("igybjp");
-        igybjp->setGeometry(QRect(1160, 280, 61, 21));
+        igybjp->setGeometry(QRect(1400, 280, 61, 21));
         layoutWidget4 = new QWidget(Widget);
         layoutWidget4->setObjectName("layoutWidget4");
         layoutWidget4->setGeometry(QRect(130, 10, 381, 281));
@@ -1161,25 +1215,34 @@ public:
         xnuebmxp->setText(QCoreApplication::translate("Widget", "\350\276\271\346\254\241", nullptr));
         xnuexpts->setText(QCoreApplication::translate("Widget", "\346\254\241\350\246\201", nullptr));
         xnueihts->setText(QCoreApplication::translate("Widget", "\347\225\205\351\200\232", nullptr));
-        cidiyh->setText(QCoreApplication::translate("Widget", "\346\254\241\344\275\216\345\244\256", nullptr));
+        bjgcyh->setText(QCoreApplication::translate("Widget", "\345\215\212\351\253\230\345\244\256", nullptr));
+        bjgchz->setText(QCoreApplication::translate("Widget", "\345\215\212\351\253\230\345\220\216", nullptr));
+        cigcyh->setText(QCoreApplication::translate("Widget", "\346\254\241\351\253\230\345\244\256", nullptr));
+        diqm->setText(QCoreApplication::translate("Widget", "\344\275\216\345\211\215", nullptr));
+        uegfjb->setText(QCoreApplication::translate("Widget", "\350\277\221", nullptr));
         bjdiyh->setText(QCoreApplication::translate("Widget", "\345\215\212\344\275\216\345\244\256", nullptr));
-        vsyh->setText(QCoreApplication::translate("Widget", "\344\270\255\345\244\256", nullptr));
+        uegfbmxp->setText(QCoreApplication::translate("Widget", "\350\276\271\346\254\241", nullptr));
+        label_21->setText(QCoreApplication::translate("Widget", "\350\210\214\346\240\271", nullptr));
+        bjdiqm->setText(QCoreApplication::translate("Widget", "\345\215\212\344\275\216\345\211\215", nullptr));
         diyh->setText(QCoreApplication::translate("Widget", "\344\275\216\345\244\256", nullptr));
-        label_14->setText(QCoreApplication::translate("Widget", "\350\210\214\346\240\271", nullptr));
-        cigchz->setText(QCoreApplication::translate("Widget", "\346\254\241\351\253\230\345\220\216", nullptr));
+        uegfca->setText(QCoreApplication::translate("Widget", "\346\223\246", nullptr));
+        uegfxpts->setText(QCoreApplication::translate("Widget", "\346\254\241\350\246\201", nullptr));
         bjdihz->setText(QCoreApplication::translate("Widget", "\345\215\212\344\275\216\345\220\216", nullptr));
         cidiqm->setText(QCoreApplication::translate("Widget", "\346\254\241\344\275\216\345\211\215", nullptr));
-        dihz->setText(QCoreApplication::translate("Widget", "\344\275\216\345\220\216", nullptr));
-        vshz->setText(QCoreApplication::translate("Widget", "\344\270\255\345\220\216", nullptr));
         cigcqm->setText(QCoreApplication::translate("Widget", "\346\254\241\351\253\230\345\211\215", nullptr));
         bjgcqm->setText(QCoreApplication::translate("Widget", "\345\215\212\351\253\230\345\211\215", nullptr));
-        bjgcyh->setText(QCoreApplication::translate("Widget", "\345\215\212\351\253\230\345\244\256", nullptr));
-        diqm->setText(QCoreApplication::translate("Widget", "\344\275\216\345\211\215", nullptr));
-        vsqm->setText(QCoreApplication::translate("Widget", "\344\270\255\345\211\215", nullptr));
-        bjgchz->setText(QCoreApplication::translate("Widget", "\345\215\212\351\253\230\345\220\216", nullptr));
-        bjdiqm->setText(QCoreApplication::translate("Widget", "\345\215\212\344\275\216\345\211\215", nullptr));
+        dihz->setText(QCoreApplication::translate("Widget", "\344\275\216\345\220\216", nullptr));
+        label_14->setText(QString());
+        cigchz->setText(QCoreApplication::translate("Widget", "\346\254\241\351\253\230\345\220\216", nullptr));
+        uegfbmca->setText(QCoreApplication::translate("Widget", "\350\276\271\346\223\246", nullptr));
+        uegfbmjb->setText(QCoreApplication::translate("Widget", "\350\276\271\350\277\221", nullptr));
+        uegfse->setText(QCoreApplication::translate("Widget", "\345\241\236", nullptr));
+        vsyh->setText(QCoreApplication::translate("Widget", "\344\270\255\345\244\256", nullptr));
+        vshz->setText(QCoreApplication::translate("Widget", "\344\270\255\345\220\216", nullptr));
         cidihz->setText(QCoreApplication::translate("Widget", "\346\254\241\344\275\216\345\220\216", nullptr));
-        cigcyh->setText(QCoreApplication::translate("Widget", "\346\254\241\351\253\230\345\244\256", nullptr));
+        vsqm->setText(QCoreApplication::translate("Widget", "\344\270\255\345\211\215", nullptr));
+        cidiyh->setText(QCoreApplication::translate("Widget", "\346\254\241\344\275\216\345\244\256", nullptr));
+        uegfuj->setText(QCoreApplication::translate("Widget", "\351\227\252", nullptr));
         label_13->setText(QCoreApplication::translate("Widget", "\345\217\214\345\224\207", nullptr));
         uliyse->setText(QCoreApplication::translate("Widget", "\345\241\236", nullptr));
         uliyij->setText(QCoreApplication::translate("Widget", "\351\242\244", nullptr));

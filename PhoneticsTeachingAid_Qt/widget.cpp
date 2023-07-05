@@ -188,64 +188,73 @@ Widget::Widget(QWidget *parent)
     connect(this->xnue,SIGNAL(buttonClicked(QAbstractButton*)),this,SLOT(anyClick()));
     //创建舌根组数据
     this->uegf = new QButtonGroup(this);
+    uegf->addButton(ui->uegfse,SENUMBER);
+    uegf->addButton(ui->uegfuj,IJNUMBER);
+    uegf->addButton(ui->uegfbmca,BMCANUMBER);
+    uegf->addButton(ui->uegfca,CANUMBER);
+    uegf->addButton(ui->uegfbmjb,BMJBNUMBER);
+    uegf->addButton(ui->uegfjb,JBNUMBER);
+    uegf->addButton(ui->uegfbmxp,BMXPNUMBER);
+    uegf->addButton(ui->uegfxpts,XPTSNUMBER);
+    connect(this->uegf,SIGNAL(buttonClicked(QAbstractButton*)),this,SLOT(anyClick()));
     mapOfUnroundedVowels = new QMap<int,QString>;
     mapOfUnroundedVowels->clear();
     mapOfRoundedVowels = new QMap<int,QString>;
     mapOfRoundedVowels->clear();
-    uegf->addButton(ui->cigcqm,CIGCNUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(CIGCNUMBER+QMNUMBER,"ɪ");
-    mapOfRoundedVowels->insert(CIGCNUMBER+QMNUMBER,"ʏ");
-    uegf->addButton(ui->cigcyh,CIGCNUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(CIGCNUMBER+YHNUMBER,"ᵻ");
-    mapOfRoundedVowels->insert(CIGCNUMBER+YHNUMBER,"ᵿ");
-    uegf->addButton(ui->cigchz,CIGCNUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(CIGCNUMBER+HZNUMBER,"ω");
-    mapOfRoundedVowels->insert(CIGCNUMBER+HZNUMBER,"ʊ");
-    uegf->addButton(ui->bjgcqm,BJGCNUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(BJGCNUMBER+QMNUMBER,"e");
-    mapOfRoundedVowels->insert(BJGCNUMBER+QMNUMBER,"ø");
-    uegf->addButton(ui->bjgcyh,BJGCNUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(BJGCNUMBER+YHNUMBER,"ɘ");
-    mapOfRoundedVowels->insert(BJGCNUMBER+YHNUMBER,"ɵ");
-    uegf->addButton(ui->bjgchz,BJGCNUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(BJGCNUMBER+HZNUMBER,"ɤ");
-    mapOfRoundedVowels->insert(BJGCNUMBER+HZNUMBER,"o");
-    uegf->addButton(ui->vsqm,VSNUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(VSNUMBER+QMNUMBER,"ᴇ");
-    mapOfRoundedVowels->insert(VSNUMBER+QMNUMBER,"ø̞");
-    uegf->addButton(ui->vsyh,VSNUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(VSNUMBER+YHNUMBER,"ə");
-    mapOfRoundedVowels->insert(VSNUMBER+YHNUMBER,"ɵ̞");
-    uegf->addButton(ui->vshz,VSNUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(VSNUMBER+HZNUMBER,"ɤ̞");
-    mapOfRoundedVowels->insert(VSNUMBER+HZNUMBER,"ⱺ");
-    uegf->addButton(ui->bjdiqm,BJDINUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(BJDINUMBER+QMNUMBER,"ɛ");
-    mapOfRoundedVowels->insert(BJDINUMBER+QMNUMBER,"œ");
-    uegf->addButton(ui->bjdiyh,BJDINUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(BJDINUMBER+YHNUMBER,"ɜ");
-    mapOfRoundedVowels->insert(BJDINUMBER+YHNUMBER,"ɞ");
-    uegf->addButton(ui->bjdihz,BJDINUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(BJDINUMBER+HZNUMBER,"ʌ");
-    mapOfRoundedVowels->insert(BJDINUMBER+HZNUMBER,"ɔ");
-    uegf->addButton(ui->cidiqm,CIDINUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(CIDINUMBER+QMNUMBER,"æ");
-    mapOfRoundedVowels->insert(CIDINUMBER+QMNUMBER,"œ̞");
-    uegf->addButton(ui->cidiyh,CIDINUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(CIDINUMBER+YHNUMBER,"ɐ");
-    mapOfRoundedVowels->insert(CIDINUMBER+YHNUMBER,"ɞ̞");
-    uegf->addButton(ui->cidihz,CIDINUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(CIDINUMBER+HZNUMBER,"ʌ̞");
-    mapOfRoundedVowels->insert(CIDINUMBER+HZNUMBER,"ɔ̞");
-    uegf->addButton(ui->diqm,DINUMBER+QMNUMBER);
-    mapOfUnroundedVowels->insert(DINUMBER+QMNUMBER,"a");
-    mapOfRoundedVowels->insert(DINUMBER+QMNUMBER,"ɶ");
-    uegf->addButton(ui->diyh,DINUMBER+YHNUMBER);
-    mapOfUnroundedVowels->insert(DINUMBER+YHNUMBER,"ᴀ");
-    mapOfRoundedVowels->insert(DINUMBER+YHNUMBER,"ɒ̈");
-    uegf->addButton(ui->dihz,DINUMBER+HZNUMBER);
-    mapOfUnroundedVowels->insert(DINUMBER+HZNUMBER,"ɑ");
-    mapOfRoundedVowels->insert(DINUMBER+HZNUMBER,"ɒ");
+    uegf->addButton(ui->cigcqm,MAJORPLACEBUTTONMAX+CIGCNUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+QMNUMBER,"ɪ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+QMNUMBER,"ʏ");
+    uegf->addButton(ui->cigcyh,MAJORPLACEBUTTONMAX+CIGCNUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+YHNUMBER,"ᵻ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+YHNUMBER,"ᵿ");
+    uegf->addButton(ui->cigchz,MAJORPLACEBUTTONMAX+CIGCNUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+HZNUMBER,"ω");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIGCNUMBER+HZNUMBER,"ʊ");
+    uegf->addButton(ui->bjgcqm,MAJORPLACEBUTTONMAX+BJGCNUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+QMNUMBER,"e");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+QMNUMBER,"ø");
+    uegf->addButton(ui->bjgcyh,MAJORPLACEBUTTONMAX+BJGCNUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+YHNUMBER,"ɘ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+YHNUMBER,"ɵ");
+    uegf->addButton(ui->bjgchz,MAJORPLACEBUTTONMAX+BJGCNUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+HZNUMBER,"ɤ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJGCNUMBER+HZNUMBER,"o");
+    uegf->addButton(ui->vsqm,MAJORPLACEBUTTONMAX+VSNUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+QMNUMBER,"ᴇ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+QMNUMBER,"ø̞");
+    uegf->addButton(ui->vsyh,MAJORPLACEBUTTONMAX+VSNUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+YHNUMBER,"ə");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+YHNUMBER,"ɵ̞");
+    uegf->addButton(ui->vshz,MAJORPLACEBUTTONMAX+VSNUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+HZNUMBER,"ɤ̞");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+VSNUMBER+HZNUMBER,"ⱺ");
+    uegf->addButton(ui->bjdiqm,MAJORPLACEBUTTONMAX+BJDINUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+QMNUMBER,"ɛ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+QMNUMBER,"œ");
+    uegf->addButton(ui->bjdiyh,MAJORPLACEBUTTONMAX+BJDINUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+YHNUMBER,"ɜ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+YHNUMBER,"ɞ");
+    uegf->addButton(ui->bjdihz,MAJORPLACEBUTTONMAX+BJDINUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+HZNUMBER,"ʌ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+BJDINUMBER+HZNUMBER,"ɔ");
+    uegf->addButton(ui->cidiqm,MAJORPLACEBUTTONMAX+CIDINUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+QMNUMBER,"æ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+QMNUMBER,"œ̞");
+    uegf->addButton(ui->cidiyh,MAJORPLACEBUTTONMAX+CIDINUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+YHNUMBER,"ɐ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+YHNUMBER,"ɞ̞");
+    uegf->addButton(ui->cidihz,MAJORPLACEBUTTONMAX+CIDINUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+HZNUMBER,"ʌ̞");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+CIDINUMBER+HZNUMBER,"ɔ̞");
+    uegf->addButton(ui->diqm,MAJORPLACEBUTTONMAX+DINUMBER+QMNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+QMNUMBER,"a");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+QMNUMBER,"ɶ");
+    uegf->addButton(ui->diyh,MAJORPLACEBUTTONMAX+DINUMBER+YHNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+YHNUMBER,"ᴀ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+YHNUMBER,"ɒ̈");
+    uegf->addButton(ui->dihz,MAJORPLACEBUTTONMAX+DINUMBER+HZNUMBER);
+    mapOfUnroundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+HZNUMBER,"ɑ");
+    mapOfRoundedVowels->insert(MAJORPLACEBUTTONMAX+DINUMBER+HZNUMBER,"ɒ");
     connect(this->uegf,SIGNAL(buttonClicked(QAbstractButton*)),this,SLOT(anyClick()));
     //创建声门组数据
     this->ugmf = new QButtonGroup(this);
@@ -298,7 +307,7 @@ int uejm_getPlace(int uejmButtonGroupCheckedId)
 void zuAppend
     (
      QString* p_targetToAppend,
-     QButtonGroup* p_placeButtonGroup,//调音部位
+     int placeChecked,//调音部位
      QButtonGroup* p_ugmfButtongroup,//声门状态
      QButtonGroup* p_ugddButtongroup,//声带状态
      QButtonGroup* p_uliiButtongroup,//双齿状态
@@ -325,7 +334,7 @@ void zuAppend
      const QString qksivzybSymbol//清咝喌音符号
     )
 {
-    switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)
+    switch(placeChecked)
     {
         //首先检视当前正在读取的按钮组是否按下了塞音按钮,是的话就判定为塞音或鼻音
 
@@ -661,12 +670,12 @@ void zuAppend
 void xptsAppendForZu//为阻音添加协同调音标记的通用方法
     (
      QString* p_targetToAppend,
-     QButtonGroup* p_placeButtonGroup,//调音部位
+     int placeChecked,//当前调音部位的状态
      const QString xptsSymbol,//该部位的协同调音符号
      const QString bmxpSymbol//该部位的边协同调音符号
     )
 {
-    switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)
+    switch(placeChecked)
     {
         case JBNUMBER:
         case XPTSNUMBER://如果该部位的近音或者协同调音按钮按下
@@ -690,7 +699,7 @@ void xptsAppendForZu//为阻音添加协同调音标记的通用方法
 void jbAppend
     (
      QString* p_targetToAppend,
-     QButtonGroup* p_placeButtonGroup,//调音部位
+     int placeChecked,//当前调音部位的状态
      const QString jbSymbol,//该部位的近音符号
      const QString igybjpjbSymbol,//该部位的成音节近音符号
      const QString bmjbSymbol,//该部位的边近音符号
@@ -702,7 +711,7 @@ void jbAppend
      bool igybjp//成音节
     )
 {
-    switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)
+    switch(placeChecked)
     {
         case JBNUMBER://如果该部位的近音按钮按下
         {
@@ -738,7 +747,7 @@ void jbAppend
             break;
         }
     }
-    switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)//添加附加符号
+    switch(placeChecked)//添加附加符号
     {
         case JBNUMBER:
         case BMJBNUMBER:
@@ -785,12 +794,12 @@ void jbAppend
 void xptsAppendForTs//为通音添加协同调音的通用方法
     (
      QString* p_targetToAppend,
-     QButtonGroup* p_placeButtonGroup,//调音部位
+     int placeChecked,//当前调音部位的状态
      const QString xptsSymbol,//该部位的协同调音符号
      const QString bmxpSymbol//该部位的边协同调音符号
     )
 {
-    switch(p_placeButtonGroup->checkedId()%MAJORPLACEBUTTONMAX)
+    switch(placeChecked)
     {
         case XPTSNUMBER://如果该部位的协同调音按钮按下
         {
@@ -833,49 +842,51 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
             this->p_resultToOutput->append("̪");
         }
     }
-    zuAppend(this->p_resultToOutput,this->xnue,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->uegf->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+             "ʡ̬̃","ʡ̬","ʡ","ʡ̬↓","ʡ̆","ʢˡ","ʢ","ʢ̪","ʜˡ","ʜ","ʜ̪","ʡ↓","ʢˡ↓","ʜˡ↓","ʢ↓","ʜ↓","ʢ̪↓","ʜ̪↓");//舌根阻音
+    zuAppend(this->p_resultToOutput,this->xnue->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "ɴ","ɢ","q","ʛ","ʀ","ʟ̝̠","ʁ","ʁ̪","\U0001DF04̠","χ","χ̪","q↓","ʟ̝̠↓","\U0001DF04̠↓","ʁ↓","χ↓","ʁ̪↓","χ̪↓");//小舌阻音
-    zuAppend(this->p_resultToOutput,this->rree,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->rree->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "ŋ","g","k","ɠ","","ʟ̝","ɣ","ɣ̪","\U0001DF04","x","x̪","k↓","ʟ̝↓","\U0001DF04↓","ɣ↓","x↓","ɣ̪↓","x̪↓");//软腭阻音
-    zuAppend(this->p_resultToOutput,this->eeyh,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->eeyh->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "ɲ̈","ɟ̈","c̈","ʄ̈","","ʎ̝̈","ʝ̈","ʝ̪̈","\U0001DF06̈","ç̈","ç̪̈","ǂ̈","ʎ̝̈↓","\U0001DF06̈↓","ʝ̈↓","ç̈↓","ʝ̪̈↓","ç̪̈↓");//腭央阻音
-    zuAppend(this->p_resultToOutput,this->ykee,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->ykee->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "ɲ","ɟ","c","ʄ","","ʎ̝","ʝ","ʝ̪","\U0001DF06̈","ç","ç̪","ǂ","ʎ̝↓","\U0001DF06↓","ʝ↓","ç↓","ʝ̪↓","ç̪↓");//硬腭阻音
     switch(uejm_getPlace(this->uejm->checkedId()))//舌尖阻音
     {
         case JRUENUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "ɳ","ɖ","ʈ","ᶑ","ɽ","\U0001DF05","ð˞","ʐ","ꞎ","θ˞","ʂ","‼","‖˞̬","‖˞","ð˞↓","θ˞↓","ʐ↓","ʂ↓");//卷舌阻音
             break;
         }
         case YBHZNUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "n̠","d̠","t̠","ɗ̠","r̠","ɮ̠","ðᶾ","z̠","ɬ̠","θᶾ","s̠","ǃ̠","‖̬̠","‖̠","ðᶾ↓","θᶾ↓","z̠↓","s̠↓");//龈后阻音
             break;
         }
         case YBEENUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "ȵ","ȡ","ȶ","ʄ̟","ɾ","ȴ̝","ʝ̟","ʑ","\U0001DF06̟↓","ç̟","ɕ","ǂ̟","ȴ̝↓","\U0001DF06̟↓","ʝ̟↓","ç̟↓","ʑ↓","ɕ↓");//龈颚阻音
             break;
         }
         case IIYBNUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "n̟","d̟","t̟","ɗ̟","r̟","ɮ̟","ð̠","z̟","ɬ̟","θ̠","s̟","ǃ̟","‖̬̟","‖̟","ð̠↓","θ̠↓","z̟↓","s̟↓");//齿龈阻音
             break;
         }
         case IIUENUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "n̪","d̪","t̪","ɗ̪","ɾ̪","ɮ̪","ð","z̪","ɬ̪","θ","s","ǃ̪","‖̬̪","‖̪","ð↓","θ↓","z̪↓","s̪↓");//齿舌阻音
             break;
         }
         case IYUENUMBER:
         {
-            zuAppend(this->p_resultToOutput,this->uejm,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+            zuAppend(this->p_resultToOutput,this->uejm->checkedId()%MAJORPLACEBUTTONMAX,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
                      "n̼","d̼","t̼","ɗ̼","r̼","ɮ̼","ð̼","z̼","ɬ̼","θ̼","s̼","ǃ̼","‖̬̼","‖̼","ð̼↓","θ̼↓","z̼↓","s̼↓");//唇舌阻音
             break;
         }
@@ -884,52 +895,53 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
             break;
         }
     }
-    zuAppend(this->p_resultToOutput,this->iyii,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->iyii->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "ɱ","b̪","p̪","ɓ̪","ʙ̪","","v","v̪","","f","f̪","ʘ̪","","","v↓","f↓","v̪↓","f̪↓");//唇齿阻音
-    zuAppend(this->p_resultToOutput,this->uliy,this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
+    zuAppend(this->p_resultToOutput,this->uliy->checkedId(),this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked(),
              "m","b","p","ɓ","ʙ","","β","β̪","","ɸ","ɸ̪","ʘ","","","β↓","ɸ↓","β̪↓","ɸ̪↓");//双唇阻音
     //接下来检查近音和协同调音:如果待输出区已经有字符,说明是阻音,那么都添加对应的协同调音符号
     if(p_resultToOutput->isEmpty()==0)
     {
-        xptsAppendForZu(this->p_resultToOutput,xnue,"ˤ","\U0001079C");//小舌
-        xptsAppendForZu(this->p_resultToOutput,rree,"ˠ","ᶫ");//软腭
-        xptsAppendForZu(this->p_resultToOutput,eeyh,"ᶡ","\U000107A1");//腭央
-        xptsAppendForZu(this->p_resultToOutput,ykee,"ʲ","\U000107A0");//硬腭
+        xptsAppendForZu(this->p_resultToOutput,uegf->checkedId(),"ˤ","ˤᶩ");//舌根
+        xptsAppendForZu(this->p_resultToOutput,xnue->checkedId(),"ˀ","\U0001079C");//小舌
+        xptsAppendForZu(this->p_resultToOutput,rree->checkedId(),"ˠ","ᶫ");//软腭
+        xptsAppendForZu(this->p_resultToOutput,eeyh->checkedId(),"ᶡ","\U000107A1");//腭央
+        xptsAppendForZu(this->p_resultToOutput,ykee->checkedId(),"ʲ","\U000107A0");//硬腭
         switch(uejm_getPlace(uejm->checkedId()))//舌尖
         {
             case JRUENUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ʵ","ᶩ");//卷舌
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ʵ","ᶩ");//卷舌
                 break;
             }
             case YBHZNUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶾ","ᶾˡ");//龈后
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶾ","ᶾˡ");//龈后
                 break;
             }
             case XXFUNUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶨ","");//下阜
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶨ","");//下阜
                 break;
             }
             case YBEENUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶽ","ᶽˡ");//龈颚
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶽ","ᶽˡ");//龈颚
                 break;
             }
             case IIYBNUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶻ","ᶻˡ");//齿龈
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶻ","ᶻˡ");//齿龈
                 break;
             }
             case IIUENUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶞ","ᶞˡ");//齿舌
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶞ","ᶞˡ");//齿舌
                 break;
             }
             case IYUENUMBER:
             {
-                xptsAppendForZu(this->p_resultToOutput,uejm,"ᶞ̼","ˡ̼");//唇舌
+                xptsAppendForZu(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶞ̼","ˡ̼");//唇舌
                 break;
             }
             default:
@@ -937,8 +949,8 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
                 break;
             }
         }
-        xptsAppendForZu(this->p_resultToOutput,iyii,"ᶹ","");//唇齿
-        xptsAppendForZu(this->p_resultToOutput,uliy,"ᵝ","");//双唇
+        xptsAppendForZu(this->p_resultToOutput,iyii->checkedId(),"ᶹ","");//唇齿
+        xptsAppendForZu(this->p_resultToOutput,uliy->checkedId(),"ᵝ","");//双唇
         if(this->p_resultToOutput->isEmpty()==0&&this->yriy->checkedId()==YRIYYRNUMBER)//特别地,如果圆唇程度是"圆",添加圆唇符号
         {
             this->p_resultToOutput->append("ʷ");
@@ -947,40 +959,41 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
     else//如果待输出区没有字符,说明是近音或元音
     {
         //添加近音符号
-        jbAppend(this->p_resultToOutput,xnue,"ʁ̘","ʁ̘̩","ʟ̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//小舌
-        jbAppend(this->p_resultToOutput,rree,"ɰ","ɯ","ʟ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//软腭
-        jbAppend(this->p_resultToOutput,eeyh,"ɉ","ɨ","ʎ̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//腭央
-        jbAppend(this->p_resultToOutput,ykee,"j","i","ʎ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//硬腭
+        jbAppend(this->p_resultToOutput,uegf->checkedId(),"ʕ","ʕ̩","ʕˡ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//舌根
+        jbAppend(this->p_resultToOutput,xnue->checkedId(),"ʁ̘","ʁ̘̩","ʟ̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//小舌
+        jbAppend(this->p_resultToOutput,rree->checkedId(),"ɰ","ɯ","ʟ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//软腭
+        jbAppend(this->p_resultToOutput,eeyh->checkedId(),"ɉ","ɨ","ʎ̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//腭央
+        jbAppend(this->p_resultToOutput,ykee->checkedId(),"j","i","ʎ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//硬腭
         switch(uejm_getPlace(this->uejm->checkedId()))//舌尖
         {
             case JRUENUMBER://卷舌
             {
-                jbAppend(this->p_resultToOutput,uejm,"ɻ","ɻ̩","ɭ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ɻ","ɻ̩","ɭ",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             case YBHZNUMBER://龈后
             {
-                jbAppend(this->p_resultToOutput,uejm,"ɹ̠","ɹ̠̩","l̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ɹ̠","ɹ̠̩","l̠",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             case YBEENUMBER://龈颚
             {
-                jbAppend(this->p_resultToOutput,uejm,"j̟","i̟","ʎ̟",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"j̟","i̟","ʎ̟",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             case IIYBNUMBER://齿龈
             {
-                jbAppend(this->p_resultToOutput,uejm,"ɹ̟","ɹ̟̩","l̟",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ɹ̟","ɹ̟̩","l̟",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             case IIUENUMBER://齿舌
             {
-                jbAppend(this->p_resultToOutput,uejm,"ɹ̪","ɹ̪̩","l̪",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ɹ̪","ɹ̪̩","l̪",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             case IYUENUMBER://唇舌
             {
-                jbAppend(this->p_resultToOutput,uejm,"ɹ̼","ɹ̼̩","l̼",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
+                jbAppend(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ɹ̼","ɹ̼̩","l̼",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());
                 break;
             }
             default:
@@ -988,8 +1001,8 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
                 break;
             }
         }
-        jbAppend(this->p_resultToOutput,iyii,"ʋ","ʋ̩","",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//唇齿
-        jbAppend(this->p_resultToOutput,uliy,"β̞","β̞̩","",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//双唇
+        jbAppend(this->p_resultToOutput,iyii->checkedId(),"ʋ","ʋ̩","",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//唇齿
+        jbAppend(this->p_resultToOutput,uliy->checkedId(),"β̞","β̞̩","",this->ugmf,this->ugdd,this->ulii,this->bi,this->yriy,this->igybjp->isChecked());//双唇
         if(this->p_resultToOutput->isEmpty()==0&&this->yriy->checkedId()==YRIYYRNUMBER)//在近音的情况下,如果圆唇程度是"圆",添加圆唇符号
         {
             this->p_resultToOutput->append("ʷ");
@@ -1050,45 +1063,46 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
             }
         }
         //最后,无论是近音还是元音,添加协同调音标记
-        xptsAppendForTs(this->p_resultToOutput,xnue,"ˤ","\U0001079C");//小舌
-        xptsAppendForTs(this->p_resultToOutput,rree,"ˠ","ᶫ");//软腭
-        xptsAppendForTs(this->p_resultToOutput,eeyh,"ᶡ","\U000107A1");//腭央
-        xptsAppendForTs(this->p_resultToOutput,ykee,"ʲ","\U000107A0");//硬腭
+        xptsAppendForTs(this->p_resultToOutput,uegf->checkedId(),"ˤ","ˤᶩ");//舌根
+        xptsAppendForTs(this->p_resultToOutput,xnue->checkedId(),"ˀ","\U0001079C");//小舌
+        xptsAppendForTs(this->p_resultToOutput,rree->checkedId(),"ˠ","ᶫ");//软腭
+        xptsAppendForTs(this->p_resultToOutput,eeyh->checkedId(),"ᶡ","\U000107A1");//腭央
+        xptsAppendForTs(this->p_resultToOutput,ykee->checkedId(),"ʲ","\U000107A0");//硬腭
         switch(uejm_getPlace(uejm->checkedId()))//舌尖
         {
             case JRUENUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ʵ","ᶩ");//卷舌
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ʵ","ᶩ");//卷舌
                 break;
             }
             case YBHZNUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶾ","ᶾˡ");//龈后
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶾ","ᶾˡ");//龈后
                 break;
             }
             case XXFUNUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶨ","");//下阜
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶨ","");//下阜
                 break;
             }
             case YBEENUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶽ","ᶽˡ");//龈颚
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶽ","ᶽˡ");//龈颚
                 break;
             }
             case IIYBNUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶻ","ᶻˡ");//齿龈
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶻ","ᶻˡ");//齿龈
                 break;
             }
             case IIUENUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶞ","ᶞˡ");//齿舌
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶞ","ᶞˡ");//齿舌
                 break;
             }
             case IYUENUMBER:
             {
-                xptsAppendForTs(this->p_resultToOutput,uejm,"ᶞ̼","ˡ̼");//齿舌
+                xptsAppendForTs(this->p_resultToOutput,uejm->checkedId()%MAJORPLACEBUTTONMAX,"ᶞ̼","ˡ̼");//齿舌
                 break;
             }
             default:
@@ -1096,8 +1110,8 @@ slots void Widget::anyClick() //当识别到"任何按钮按下"这一信号时,
                 break;
             }
         }
-        xptsAppendForTs(this->p_resultToOutput,iyii,"ᶹ","");//唇齿
-        xptsAppendForTs(this->p_resultToOutput,uliy,"ᵝ","");//双唇
+        xptsAppendForTs(this->p_resultToOutput,iyii->checkedId(),"ᶹ","");//唇齿
+        xptsAppendForTs(this->p_resultToOutput,uliy->checkedId(),"ᵝ","");//双唇
     }
     //最后,如果是吸气状态,而用以表示吸气状态的字符过少或过多,则调整数量,使向下箭头只有一个,并转移到最后
     if(this->ugmf->checkedId()==UGMFXINUMBER)
