@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1471</width>
+    <width>1602</width>
     <height>611</height>
    </rect>
   </property>
@@ -250,7 +250,7 @@
   <widget class="QWidget" name="layoutWidget_6">
    <property name="geometry">
     <rect>
-     <x>1210</x>
+     <x>1326</x>
      <y>80</y>
      <width>39</width>
      <height>125</height>
@@ -300,7 +300,7 @@
   <widget class="QWidget" name="layoutWidget_7">
    <property name="geometry">
     <rect>
-     <x>1264</x>
+     <x>1380</x>
      <y>100</y>
      <width>39</width>
      <height>71</height>
@@ -336,7 +336,7 @@
   <widget class="QWidget" name="layoutWidget_8">
    <property name="geometry">
     <rect>
-     <x>1314</x>
+     <x>1430</x>
      <y>100</y>
      <width>51</width>
      <height>71</height>
@@ -372,7 +372,7 @@
   <widget class="QWidget" name="layoutWidget_9">
    <property name="geometry">
     <rect>
-     <x>1374</x>
+     <x>1490</x>
      <y>80</y>
      <width>39</width>
      <height>125</height>
@@ -422,7 +422,7 @@
   <widget class="QWidget" name="layoutWidget_10">
    <property name="geometry">
     <rect>
-     <x>1424</x>
+     <x>1540</x>
      <y>90</y>
      <width>39</width>
      <height>98</height>
@@ -467,7 +467,7 @@
     <rect>
      <x>9</x>
      <y>302</y>
-     <width>1451</width>
+     <width>1581</width>
      <height>301</height>
     </rect>
    </property>
@@ -580,217 +580,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>60</y>
-     <width>441</width>
-     <height>185</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="2" column="1">
-     <widget class="QRadioButton" name="bjgcyh">
-      <property name="text">
-       <string>半高央</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QRadioButton" name="bjgchz">
-      <property name="text">
-       <string>半高后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QRadioButton" name="cigcyh">
-      <property name="text">
-       <string>次高央</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QRadioButton" name="diqm">
-      <property name="text">
-       <string>低前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="4" rowspan="3">
-     <widget class="QRadioButton" name="uegfjb">
-      <property name="text">
-       <string>近</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QRadioButton" name="bjdiyh">
-      <property name="text">
-       <string>半低央</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3" rowspan="3">
-     <widget class="QRadioButton" name="uegfbmxp">
-      <property name="text">
-       <string>边次</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <widget class="QLabel" name="label_21">
-      <property name="text">
-       <string>舌根</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QRadioButton" name="bjdiqm">
-      <property name="text">
-       <string>半低前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="QRadioButton" name="diyh">
-      <property name="text">
-       <string>低央</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="5" rowspan="3">
-     <widget class="QRadioButton" name="uegfca">
-      <property name="text">
-       <string>擦</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="3" rowspan="3">
-     <widget class="QRadioButton" name="uegfxpts">
-      <property name="text">
-       <string>次要</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="QRadioButton" name="bjdihz">
-      <property name="text">
-       <string>半低后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QRadioButton" name="cidiqm">
-      <property name="text">
-       <string>次低前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QRadioButton" name="cigcqm">
-      <property name="text">
-       <string>次高前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QRadioButton" name="bjgcqm">
-      <property name="text">
-       <string>半高前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="QRadioButton" name="dihz">
-      <property name="text">
-       <string>低后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_14">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QRadioButton" name="cigchz">
-      <property name="text">
-       <string>次高后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="5" rowspan="3">
-     <widget class="QRadioButton" name="uegfbmca">
-      <property name="text">
-       <string>边擦</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="4" rowspan="3">
-     <widget class="QRadioButton" name="uegfbmjb">
-      <property name="text">
-       <string>边近</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="7" rowspan="6">
-     <widget class="QRadioButton" name="uegfse">
-      <property name="text">
-       <string>塞</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QRadioButton" name="vsyh">
-      <property name="text">
-       <string>中央</string>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QRadioButton" name="vshz">
-      <property name="text">
-       <string>中后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="2">
-     <widget class="QRadioButton" name="cidihz">
-      <property name="text">
-       <string>次低后</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QRadioButton" name="vsqm">
-      <property name="text">
-       <string>中前</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QRadioButton" name="cidiyh">
-      <property name="text">
-       <string>次低央</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="6" rowspan="6">
-     <widget class="QRadioButton" name="uegfuj">
-      <property name="text">
-       <string>闪</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
      <x>9</x>
      <y>70</y>
      <width>51</width>
@@ -858,8 +647,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QCheckBox" name="igybjp">
    <property name="geometry">
     <rect>
-     <x>1400</x>
-     <y>280</y>
+     <x>1520</x>
+     <y>270</y>
      <width>61</width>
      <height>21</height>
     </rect>
@@ -1308,19 +1097,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
      </widget>
     </item>
-    <item row="1" column="3">
-     <widget class="QLabel" name="label_11">
-      <property name="text">
-       <string>舌尖</string>
-      </property>
-      <property name="wordWrap">
-       <bool>false</bool>
-      </property>
-      <property name="openExternalLinks">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="4" rowspan="4">
      <widget class="QRadioButton" name="xxfuxpts">
       <property name="text">
@@ -1332,6 +1108,19 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <widget class="QRadioButton" name="xxfuihts">
       <property name="text">
        <string>畅通</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="7">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>舌尖</string>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
@@ -1396,6 +1185,293 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
       <property name="checked">
        <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>761</x>
+     <y>61</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>762</x>
+     <y>62</y>
+     <width>552</width>
+     <height>179</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="cigcqm">
+      <property name="text">
+       <string>次高前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QRadioButton" name="cigcyh">
+      <property name="text">
+       <string>次高央</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QRadioButton" name="cigchz">
+      <property name="text">
+       <string>次高后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QRadioButton" name="cigcyjhx">
+      <property name="text">
+       <string>次高咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QRadioButton" name="bjgcqm">
+      <property name="text">
+       <string>半高前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="bjgcyh">
+      <property name="text">
+       <string>半高央</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QRadioButton" name="bjgchz">
+      <property name="text">
+       <string>半高后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QRadioButton" name="bjgcbmyj">
+      <property name="text">
+       <string>半高边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QRadioButton" name="bjgcyjhx">
+      <property name="text">
+       <string>半高咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="vsqm">
+      <property name="text">
+       <string>中前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QRadioButton" name="vsyh">
+      <property name="text">
+       <string>中央</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QRadioButton" name="vshz">
+      <property name="text">
+       <string>中后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QRadioButton" name="vsbmyj">
+      <property name="text">
+       <string>中边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QRadioButton" name="vsyjhx">
+      <property name="text">
+       <string>中咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="bjdiqm">
+      <property name="text">
+       <string>半低前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QRadioButton" name="bjdiyh">
+      <property name="text">
+       <string>半低央</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QRadioButton" name="bjdihz">
+      <property name="text">
+       <string>半低后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QRadioButton" name="bjdibmyj">
+      <property name="text">
+       <string>半低边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QRadioButton" name="bjdiyjhx">
+      <property name="text">
+       <string>半低咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QRadioButton" name="cidiqm">
+      <property name="text">
+       <string>次低前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QRadioButton" name="cidiyh">
+      <property name="text">
+       <string>次低央</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QRadioButton" name="cidihz">
+      <property name="text">
+       <string>次低后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QRadioButton" name="cidibmyj">
+      <property name="text">
+       <string>次低边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QRadioButton" name="cidiyjhx">
+      <property name="text">
+       <string>次低咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QRadioButton" name="diqm">
+      <property name="text">
+       <string>低前</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QRadioButton" name="diyh">
+      <property name="text">
+       <string>低央</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QRadioButton" name="dihz">
+      <property name="text">
+       <string>低后</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QRadioButton" name="dibmyj">
+      <property name="text">
+       <string>低边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QRadioButton" name="diyjhx">
+      <property name="text">
+       <string>低咽化</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7" rowspan="6">
+     <widget class="QRadioButton" name="uegfuj">
+      <property name="text">
+       <string>闪</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8" rowspan="6">
+     <widget class="QRadioButton" name="uegfse">
+      <property name="text">
+       <string>塞</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5" rowspan="3">
+     <widget class="QRadioButton" name="uegfbmjb">
+      <property name="text">
+       <string>边近</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6" rowspan="3">
+     <widget class="QRadioButton" name="uegfbmca">
+      <property name="text">
+       <string>边擦</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5" rowspan="3">
+     <widget class="QRadioButton" name="uegfjb">
+      <property name="text">
+       <string>近</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6" rowspan="3">
+     <widget class="QRadioButton" name="uegfca">
+      <property name="text">
+       <string>擦</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QRadioButton" name="cigcbmyj">
+      <property name="text">
+       <string>次高边咽</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="9">
+     <widget class="QLabel" name="label_21">
+      <property name="text">
+       <string>舌根</string>
       </property>
      </widget>
     </item>
