@@ -1,11 +1,13 @@
-#pragma once
 /********************************************************************************
-** Form generated from reading UI file ''
+** Form generated from reading UI file 'widget.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
+
+#ifndef UI_WIDGET_H
+#define UI_WIDGET_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -183,7 +185,7 @@ public:
     QRadioButton *iyiixpts;
     QRadioButton *iyiiihts;
     QLabel *label_14;
-    QWidget *widget;
+    QWidget *layoutWidget5;
     QGridLayout *gridLayout_2;
     QRadioButton *cigcqm;
     QRadioButton *cigcyh;
@@ -523,7 +525,7 @@ public:
         resultDisplayer->setObjectName("resultDisplayer");
         resultDisplayer->setGeometry(QRect(9, 302, 1581, 301));
         QFont font;
-        font.setFamilies({QString::fromUtf8("Unifont Upper")});
+        font.setFamilies({QString::fromUtf8("Unifont-JP")});
         font.setPointSize(48);
         font.setKerning(false);
         resultDisplayer->setFont(font);
@@ -1005,194 +1007,194 @@ public:
         label_14 = new QLabel(Widget);
         label_14->setObjectName("label_14");
         label_14->setGeometry(QRect(761, 61, 16, 16));
-        widget = new QWidget(Widget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(762, 62, 552, 179));
-        gridLayout_2 = new QGridLayout(widget);
+        layoutWidget5 = new QWidget(Widget);
+        layoutWidget5->setObjectName("layoutWidget5");
+        layoutWidget5->setGeometry(QRect(762, 62, 552, 179));
+        gridLayout_2 = new QGridLayout(layoutWidget5);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        cigcqm = new QRadioButton(widget);
+        cigcqm = new QRadioButton(layoutWidget5);
         cigcqm->setObjectName("cigcqm");
 
         gridLayout_2->addWidget(cigcqm, 1, 0, 1, 1);
 
-        cigcyh = new QRadioButton(widget);
+        cigcyh = new QRadioButton(layoutWidget5);
         cigcyh->setObjectName("cigcyh");
 
         gridLayout_2->addWidget(cigcyh, 1, 1, 1, 1);
 
-        cigchz = new QRadioButton(widget);
+        cigchz = new QRadioButton(layoutWidget5);
         cigchz->setObjectName("cigchz");
 
         gridLayout_2->addWidget(cigchz, 1, 2, 1, 1);
 
-        cigcyjhx = new QRadioButton(widget);
+        cigcyjhx = new QRadioButton(layoutWidget5);
         cigcyjhx->setObjectName("cigcyjhx");
 
         gridLayout_2->addWidget(cigcyjhx, 1, 4, 1, 1);
 
-        bjgcqm = new QRadioButton(widget);
+        bjgcqm = new QRadioButton(layoutWidget5);
         bjgcqm->setObjectName("bjgcqm");
 
         gridLayout_2->addWidget(bjgcqm, 2, 0, 1, 1);
 
-        bjgcyh = new QRadioButton(widget);
+        bjgcyh = new QRadioButton(layoutWidget5);
         bjgcyh->setObjectName("bjgcyh");
 
         gridLayout_2->addWidget(bjgcyh, 2, 1, 1, 1);
 
-        bjgchz = new QRadioButton(widget);
+        bjgchz = new QRadioButton(layoutWidget5);
         bjgchz->setObjectName("bjgchz");
 
         gridLayout_2->addWidget(bjgchz, 2, 2, 1, 1);
 
-        bjgcbmyj = new QRadioButton(widget);
+        bjgcbmyj = new QRadioButton(layoutWidget5);
         bjgcbmyj->setObjectName("bjgcbmyj");
 
         gridLayout_2->addWidget(bjgcbmyj, 2, 3, 1, 1);
 
-        bjgcyjhx = new QRadioButton(widget);
+        bjgcyjhx = new QRadioButton(layoutWidget5);
         bjgcyjhx->setObjectName("bjgcyjhx");
 
         gridLayout_2->addWidget(bjgcyjhx, 2, 4, 1, 1);
 
-        vsqm = new QRadioButton(widget);
+        vsqm = new QRadioButton(layoutWidget5);
         vsqm->setObjectName("vsqm");
 
         gridLayout_2->addWidget(vsqm, 3, 0, 1, 1);
 
-        vsyh = new QRadioButton(widget);
+        vsyh = new QRadioButton(layoutWidget5);
         vsyh->setObjectName("vsyh");
         vsyh->setChecked(true);
 
         gridLayout_2->addWidget(vsyh, 3, 1, 1, 1);
 
-        vshz = new QRadioButton(widget);
+        vshz = new QRadioButton(layoutWidget5);
         vshz->setObjectName("vshz");
 
         gridLayout_2->addWidget(vshz, 3, 2, 1, 1);
 
-        vsbmyj = new QRadioButton(widget);
+        vsbmyj = new QRadioButton(layoutWidget5);
         vsbmyj->setObjectName("vsbmyj");
 
         gridLayout_2->addWidget(vsbmyj, 3, 3, 1, 1);
 
-        vsyjhx = new QRadioButton(widget);
+        vsyjhx = new QRadioButton(layoutWidget5);
         vsyjhx->setObjectName("vsyjhx");
 
         gridLayout_2->addWidget(vsyjhx, 3, 4, 1, 1);
 
-        bjdiqm = new QRadioButton(widget);
+        bjdiqm = new QRadioButton(layoutWidget5);
         bjdiqm->setObjectName("bjdiqm");
 
         gridLayout_2->addWidget(bjdiqm, 4, 0, 1, 1);
 
-        bjdiyh = new QRadioButton(widget);
+        bjdiyh = new QRadioButton(layoutWidget5);
         bjdiyh->setObjectName("bjdiyh");
 
         gridLayout_2->addWidget(bjdiyh, 4, 1, 1, 1);
 
-        bjdihz = new QRadioButton(widget);
+        bjdihz = new QRadioButton(layoutWidget5);
         bjdihz->setObjectName("bjdihz");
 
         gridLayout_2->addWidget(bjdihz, 4, 2, 1, 1);
 
-        bjdibmyj = new QRadioButton(widget);
+        bjdibmyj = new QRadioButton(layoutWidget5);
         bjdibmyj->setObjectName("bjdibmyj");
 
         gridLayout_2->addWidget(bjdibmyj, 4, 3, 1, 1);
 
-        bjdiyjhx = new QRadioButton(widget);
+        bjdiyjhx = new QRadioButton(layoutWidget5);
         bjdiyjhx->setObjectName("bjdiyjhx");
 
         gridLayout_2->addWidget(bjdiyjhx, 4, 4, 1, 1);
 
-        cidiqm = new QRadioButton(widget);
+        cidiqm = new QRadioButton(layoutWidget5);
         cidiqm->setObjectName("cidiqm");
 
         gridLayout_2->addWidget(cidiqm, 5, 0, 1, 1);
 
-        cidiyh = new QRadioButton(widget);
+        cidiyh = new QRadioButton(layoutWidget5);
         cidiyh->setObjectName("cidiyh");
 
         gridLayout_2->addWidget(cidiyh, 5, 1, 1, 1);
 
-        cidihz = new QRadioButton(widget);
+        cidihz = new QRadioButton(layoutWidget5);
         cidihz->setObjectName("cidihz");
 
         gridLayout_2->addWidget(cidihz, 5, 2, 1, 1);
 
-        cidibmyj = new QRadioButton(widget);
+        cidibmyj = new QRadioButton(layoutWidget5);
         cidibmyj->setObjectName("cidibmyj");
 
         gridLayout_2->addWidget(cidibmyj, 5, 3, 1, 1);
 
-        cidiyjhx = new QRadioButton(widget);
+        cidiyjhx = new QRadioButton(layoutWidget5);
         cidiyjhx->setObjectName("cidiyjhx");
 
         gridLayout_2->addWidget(cidiyjhx, 5, 4, 1, 1);
 
-        diqm = new QRadioButton(widget);
+        diqm = new QRadioButton(layoutWidget5);
         diqm->setObjectName("diqm");
 
         gridLayout_2->addWidget(diqm, 6, 0, 1, 1);
 
-        diyh = new QRadioButton(widget);
+        diyh = new QRadioButton(layoutWidget5);
         diyh->setObjectName("diyh");
 
         gridLayout_2->addWidget(diyh, 6, 1, 1, 1);
 
-        dihz = new QRadioButton(widget);
+        dihz = new QRadioButton(layoutWidget5);
         dihz->setObjectName("dihz");
 
         gridLayout_2->addWidget(dihz, 6, 2, 1, 1);
 
-        dibmyj = new QRadioButton(widget);
+        dibmyj = new QRadioButton(layoutWidget5);
         dibmyj->setObjectName("dibmyj");
 
         gridLayout_2->addWidget(dibmyj, 6, 3, 1, 1);
 
-        diyjhx = new QRadioButton(widget);
-        diyjhx->setObjectName("radioButton_9");
+        diyjhx = new QRadioButton(layoutWidget5);
+        diyjhx->setObjectName("diyjhx");
 
         gridLayout_2->addWidget(diyjhx, 6, 4, 1, 1);
 
-        uegfuj = new QRadioButton(widget);
+        uegfuj = new QRadioButton(layoutWidget5);
         uegfuj->setObjectName("uegfuj");
 
         gridLayout_2->addWidget(uegfuj, 1, 7, 6, 1);
 
-        uegfse = new QRadioButton(widget);
+        uegfse = new QRadioButton(layoutWidget5);
         uegfse->setObjectName("uegfse");
 
         gridLayout_2->addWidget(uegfse, 1, 8, 6, 1);
 
-        uegfbmjb = new QRadioButton(widget);
+        uegfbmjb = new QRadioButton(layoutWidget5);
         uegfbmjb->setObjectName("uegfbmjb");
 
         gridLayout_2->addWidget(uegfbmjb, 1, 5, 3, 1);
 
-        uegfbmca = new QRadioButton(widget);
+        uegfbmca = new QRadioButton(layoutWidget5);
         uegfbmca->setObjectName("uegfbmca");
 
         gridLayout_2->addWidget(uegfbmca, 1, 6, 3, 1);
 
-        uegfjb = new QRadioButton(widget);
+        uegfjb = new QRadioButton(layoutWidget5);
         uegfjb->setObjectName("uegfjb");
 
         gridLayout_2->addWidget(uegfjb, 4, 5, 3, 1);
 
-        uegfca = new QRadioButton(widget);
+        uegfca = new QRadioButton(layoutWidget5);
         uegfca->setObjectName("uegfca");
 
         gridLayout_2->addWidget(uegfca, 4, 6, 3, 1);
 
-        cigcbmyj = new QRadioButton(widget);
+        cigcbmyj = new QRadioButton(layoutWidget5);
         cigcbmyj->setObjectName("cigcbmyj");
 
         gridLayout_2->addWidget(cigcbmyj, 1, 3, 1, 1);
 
-        label_21 = new QLabel(widget);
+        label_21 = new QLabel(layoutWidget5);
         label_21->setObjectName("label_21");
 
         gridLayout_2->addWidget(label_21, 0, 0, 1, 9);
@@ -1259,8 +1261,8 @@ public:
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Unifont Upper'; font-size:48pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'Unifont-JP'; font-size:48pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Unifont Upper';\"><br /></p></body></html>", nullptr));
         label->setText(QCoreApplication::translate("Widget", "\345\260\217\350\210\214", nullptr));
         xnuese->setText(QCoreApplication::translate("Widget", "\345\241\236", nullptr));
         xnueij->setText(QCoreApplication::translate("Widget", "\351\242\244", nullptr));
@@ -1398,3 +1400,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
+#endif // UI_WIDGET_H
